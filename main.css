@@ -1,5 +1,6 @@
 body {
      margin: 0;
+     font-family: sans-serif;
 }
 
 header, main, footer {
@@ -7,25 +8,54 @@ header, main, footer {
     width: 800px; 
     margin-left: calc(50% - 400px);
     margin-bottom: 30px;
+    display: inline-block;
 }
 header {
     margin-top: 30px;
 }
+header:hover {
+    background-color: bisque;
+    
+}
 
 img {
     width: 100px;
-    height: 40pxo;
+    height: 40px;
     float: left;
     object-fit: contain;
     object-position: left;
-    background-color: antiquewhite;
 }
 
 nav {
+    
     float: right;
+    margin-top: 10px;
 }
 
 a {
-
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    margin-left: 2em;
+    display: inline-block;
+    line-height: 1em;
 }
 
+a:first-child {
+    margin-left: 0;
+}
+a:hover {
+    color: azure;
+    text-decoration: underline;
+    background-color: rgb(211, 173, 247);
+}
+a:last-child {
+    color: blue;
+}
+
+/* 
+Labai svarbu isdestymo eiliskumas
+
+
+
+*/
