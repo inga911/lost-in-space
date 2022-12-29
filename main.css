@@ -1,15 +1,31 @@
-header {
+body {
+     margin: 0;
+}
+
+header, main, footer {
     background-color: aqua;
     width: 800px; 
     margin-left: calc(50% - 400px);
+    margin-bottom: 30px;
 }
-main {
-    background-color:rgb(71, 228, 176);
-    width: 800px; 
-    margin-left: calc(50% - 400px);
+header {
+    margin-top: 30px;
 }
-footer {
-    background-color:blanchedalmond;
-    width: 800px; 
-    margin-left: calc(50% - 400px);
+
+img {
+    width: 100px;
+    height: 40pxo;
+    float: left;
+    object-fit: contain;
+    object-position: left;
+    background-color: antiquewhite;
 }
+
+nav {
+    float: right;
+}
+
+a {
+
+}
+
