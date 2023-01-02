@@ -4,9 +4,8 @@ body {
 }
 
 header, main, footer {
-    background-color: aqua;
-    width: 800px; 
-    margin-left: calc(50% - 400px);
+    width: 1000px; 
+    margin-left: calc(50% - 500px);
     margin-bottom: 30px;
     display: inline-block;
 }
@@ -18,7 +17,7 @@ header:hover {
     
 }
 
-img {
+header > img {
     width: 100px;
     height: 40px;
     float: left;
@@ -32,7 +31,7 @@ nav {
     margin-top: 10px;
 }
 
-a {
+nav > a {
     font-size: 20px;
     text-decoration: none;
     color: #000;
@@ -41,16 +40,75 @@ a {
     line-height: 1em;
 }
 
-a:first-child {
+nav > a:first-child {
     margin-left: 0;
 }
-a:hover {
+nav > a:hover { /*:hover = pseudo selektoriai*/
     color: azure;
     text-decoration: underline;
     background-color: rgb(211, 173, 247);
 }
-a:last-child {
+nav > a:last-child {
     color: blue;
+}
+
+main > img {
+    width: 50%;
+}
+
+div {
+ width: 40%;
+ float: left;
+}
+
+h1 {
+    font-size: 50px;
+    color:#222222;
+    font-weight: normal;
+}
+
+h1 > span {
+    font-weight: bold;
+    /*display: inline-block;*/ /*sitas perkeltu i nauja eilute jei teksto eilute netilptu todel nevisada veikia*/
+    display: block;
+}
+
+p {
+    font-size: 15px;
+    width: 75%;
+}
+
+div > a { /* sitas kad visi "mygtukai" butu tam tikrais aspektais vienodais*/
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #662c8c;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.3em; /*kartais verta nustatyti line-height, nes narsyklese jis skirtingas pagal automatini nustatyma*/
+    padding: 0.9em; 
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-right: 1em;
+    border-radius: 1.7em; /*apskaiciuojame dydi: (padding*2[visus ir apacia] + line-hight + (boder *2 [jeigu yra]) / 2*/
+    float: left; /* kad butu vienas salia kito*/
+    /* galima butu naudoti ir display: inline-block; /*kad butu vienas salia kito*/
+   /*rekomenduotina kartais naudoti em matavimo vieneta kad proporcingai keistusi dydziai*/
+    border: 0.15em solid#662c8c;
+}
+
+div > a:last-child {
+    background-color: #fff;
+    color: #662c8c;
+}
+
+div > a:hover {
+    box-shadow: 0px 5px 10px #20102569; /*pirmasis horozontaliai, antrasis vertikaliai, treciasis bluras, ketvirtasis-zoomas, isdidina visa seseli*/
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.558); 
+}
+
+main > img {
+    width: 55%;
+    float: right;
 }
 
 /* 
