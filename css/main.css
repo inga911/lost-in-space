@@ -3,21 +3,17 @@ body {
      font-family: sans-serif;
 }
 
-header, main, footer {
+.container {
     width: 1000px; 
     margin-left: calc(50% - 500px);
     margin-bottom: 30px;
     display: inline-block;
 }
-header {
+.container:first-child {
     margin-top: 30px;
 }
-header:hover {
-    background-color: bisque;
-    
-}
 
-header > img {
+.logo {
     width: 100px;
     height: 40px;
     float: left;
@@ -25,13 +21,13 @@ header > img {
     object-position: left;
 }
 
-nav {
+.main-menu {
     
     float: right;
     margin-top: 10px;
 }
 
-nav > a {
+.link {
     font-size: 20px;
     text-decoration: none;
     color: #000;
@@ -40,15 +36,15 @@ nav > a {
     line-height: 1em;
 }
 
-nav > a:first-child {
+.link:first-child {
     margin-left: 0;
 }
-nav > a:hover { /*:hover = pseudo selektoriai*/
+.link:hover { /*:hover = pseudo selektoriai*/
     color: azure;
     text-decoration: underline;
     background-color: rgb(211, 173, 247);
 }
-nav > a:last-child {
+.link:last-child {
     color: blue;
 }
 
@@ -56,29 +52,29 @@ main > img {
     width: 50%;
 }
 
-div {
+.left-column {
  width: 40%;
  float: left;
 }
 
-h1 {
+.main-title {
     font-size: 50px;
     color:#222222;
     font-weight: normal;
 }
 
-h1 > span {
+.main-title > span {
     font-weight: bold;
     /*display: inline-block;*/ /*sitas perkeltu i nauja eilute jei teksto eilute netilptu todel nevisada veikia*/
     display: block;
 }
 
-p {
+.description {
     font-size: 15px;
     width: 75%;
 }
 
-div > a { /* sitas kad visi "mygtukai" butu tam tikrais aspektais vienodais*/
+.button { /* sitas kad visi "mygtukai" butu tam tikrais aspektais vienodais*/
     text-transform: uppercase;
     text-decoration: none;
     background-color: #662c8c;
@@ -89,26 +85,62 @@ div > a { /* sitas kad visi "mygtukai" butu tam tikrais aspektais vienodais*/
     padding-left: 2em;
     padding-right: 2em;
     margin-right: 1em;
-    border-radius: 1.7em; /*apskaiciuojame dydi: (padding*2[visus ir apacia] + line-hight + (boder *2 [jeigu yra]) / 2*/
+    border-radius: 1.7em; /*apskaiciuojame dydi: (padding*2[visus ir apacia] + line-hight + (boder *2 [jeigu yra]) / 2
     float: left; /* kad butu vienas salia kito*/
     /* galima butu naudoti ir display: inline-block; /*kad butu vienas salia kito*/
    /*rekomenduotina kartais naudoti em matavimo vieneta kad proporcingai keistusi dydziai*/
     border: 0.15em solid#662c8c;
 }
 
-div > a:last-child {
+.button:last-child {
     background-color: #fff;
     color: #662c8c;
 }
 
-div > a:hover {
+.button:hover {
     box-shadow: 0px 5px 10px #20102569; /*pirmasis horozontaliai, antrasis vertikaliai, treciasis bluras, ketvirtasis-zoomas, isdidina visa seseli*/
     text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.558); 
 }
 
-main > img {
+.right-column {
     width: 55%;
     float: right;
+}
+.right-column > .img-grey, 
+.right-column:hover > .img-color {
+    display: block;
+}
+
+.right-column > .img-color,
+.right-column:hover > .img-grey  {
+    display: none;
+}
+
+
+
+.socials{
+    float: left;
+}
+
+.socials > .icon {
+    margin-right: 1em;
+    line-height: 1em;
+    font-size: 20px;
+    color: #999;
+    text-decoration: none;
+}
+
+.socials > .icon:last-child {
+    margin-right: 0;
+}
+
+.copyright {
+float: right;
+margin: 0;
+}
+
+.socials > .icon:hover {
+color: #662c8c;
 }
 
 /* 
