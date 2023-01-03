@@ -10,7 +10,7 @@ body {
     display: inline-block;
 }
 .container:first-child {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .logo {
@@ -44,13 +44,8 @@ body {
     text-decoration: underline;
     background-color: rgb(211, 173, 247);
 }
-.link:last-child {
-    color: #923dca;
-}
 
-main > img {
-    width: 50%;
-}
+
 
 .left-column {
  width: 40%;
@@ -75,6 +70,7 @@ main > img {
 }
 
 .button { /* sitas kad visi "mygtukai" butu tam tikrais aspektais vienodais*/
+    float: left;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #662c8c;
@@ -85,6 +81,7 @@ main > img {
     padding-left: 2em;
     padding-right: 2em;
     margin-right: 1em;
+    margin-bottom: 1em;
     border-radius: 1.7em; /*apskaiciuojame dydi: (padding*2[visus ir apacia] + line-hight + (boder *2 [jeigu yra]) / 2
     float: left; /* kad butu vienas salia kito*/
     /* galima butu naudoti ir display: inline-block; /*kad butu vienas salia kito*/
@@ -106,6 +103,11 @@ main > img {
     width: 55%;
     float: right;
 }
+
+.right-column > img {
+    width: 100%;
+}
+
 .right-column > .img-grey, 
 .right-column:hover > .img-color {
     display: block;
@@ -115,7 +117,6 @@ main > img {
 .right-column:hover > .img-grey  {
     display: none;
 }
-
 
 
 .socials{
@@ -134,14 +135,16 @@ main > img {
     margin-right: 0;
 }
 
+.socials > .icon:hover {
+color: #662c8c;
+}
+
 .copyright {
 float: right;
 margin: 0;
 }
 
-.socials > .icon:hover {
-color: #662c8c;
-}
+
 
 /* 
 Labai svarbu isdestymo eiliskumas
