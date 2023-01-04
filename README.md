@@ -10,7 +10,7 @@ _website design project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://inga911.github.io/lost-in-space/index.html
+Site published at: https://inga911.github.io/lost-in-space/
 
 Design: [Astronautas](https://cdn.dribbble.com/users/1355613/screenshots/5964475/space.gif)
 
