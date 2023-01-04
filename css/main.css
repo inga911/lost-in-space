@@ -64,6 +64,14 @@ body {
     display: block;
 }
 
+.main-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 6px;
+    background-color: #662c8c;
+}
+
 .description {
     font-size: 15px;
     width: 75%;
